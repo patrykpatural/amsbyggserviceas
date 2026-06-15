@@ -49,7 +49,7 @@ export default function Header() {
         </a>
 
         <Link className="btn btn-primary" href="/kontakt">
-          Darmowa wycena
+          Indywidualna wycena
         </Link>
       </div>
     </header>

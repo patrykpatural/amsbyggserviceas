@@ -6,6 +6,7 @@ const navItems = [
   { href: '/projektowanie-domu', label: 'Projektowanie domu' },
   { href: '/opinie-klientow', label: 'Opinie klientów' },
   { href: '/kontakt', label: 'Kontakt' },
+    { href: '/o-nas', label: 'O nas' },
 ]
 
 export default function Footer() {

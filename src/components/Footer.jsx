@@ -75,8 +75,8 @@ export default function Footer() {
           <h3>Dane firmy</h3>
           <ul>
             <li>AMS BYGGSERVICE AS</li>
-            <li>Org. nr: XXX XXX XXX</li>
-            <li>Adres: ul. Przykładowa 1, 00-000 Warszawa</li>
+            <li>Org. nr: 132 643 276</li>
+            <li>Adres: ul. Przykładowa 1, 98-400 Wieruszów</li>
           </ul>
         </div>
 
@@ -84,14 +84,14 @@ export default function Footer() {
           <h3>Kontakt</h3>
           <ul>
             <li>
-              <a href="tel:+48XXXXXXXXX">📞 +48 XXX XXX XXX</a>
+              <a href="tel:+47 925 36 941">📞 +47 925 36 941</a>
             </li>
             <li>
               <a href="mailto:kontakt@amsbyggservice.pl">
                 📧 kontakt@amsbyggservice.pl
               </a>
             </li>
-            <li>Pn–Pt: 8:00–17:00</li>
+            <li>Pn–Pt: 8:00–16:00</li>
           </ul>
         </div>
       </div>

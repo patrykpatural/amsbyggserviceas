@@ -44,7 +44,7 @@ export default function Header() {
           ))}
         </nav>
 
-        <a className="nav-phone" href="tel:+48XXXXXXXXX">
+        <a className="nav-phone" href="tel:+47 925 36 941">
           📞 +47 925 36 941
         </a>
 

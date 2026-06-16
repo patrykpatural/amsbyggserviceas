@@ -6,11 +6,11 @@ function ContactCTA() {
       <div className="cta-box">
         <div className="cta-grid">
           <div>
-            <p className="eyebrow">Zamknij lejka sprzedażowego</p>
-            <h2 className="cta-title">Zbudujmy Twój dom. Otrzymaj darmową wycenę w 48 godzin.</h2>
+            <p className="eyebrow">Zbuduj swój wymarzony dom!</p>
+            <h2 className="cta-title">Zaprojektuj swój dom z nami. Skontaktuj się z nami już dziś!</h2>
             <p>
                 Masz pytania? Chcesz poznać realny koszt projektu? Wypełnij formularz
-                i odezwiemy się z konkretną odpowiedzią.
+                i odezwiemy się z konkretną odpowiedzią i fachowym doradztwem.
             </p>
           </div>
           <form>
@@ -20,7 +20,7 @@ function ContactCTA() {
             </div>
             <label>E-mail<input type="email" placeholder="mail@przyklad.pl" /></label>
             <label>Lokalizacja<input type="text" placeholder="np. Kraków / woj. małopolskie" /></label>
-            <label>Treść wiadomości<textarea rows="4" placeholder="Opowiedz o swoim projekcie, działce i terminie"></textarea></label>
+            <label>Treść wiadomości<textarea rows="4" placeholder="Opisz swój wymarzony projekt domu..."></textarea></label>
             <a className="btn btn-primary" href="kontakt.html">Wyślij zapytanie</a>
           </form>
         </div>

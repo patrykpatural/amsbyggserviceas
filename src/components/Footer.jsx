@@ -76,7 +76,7 @@ export default function Footer() {
           <ul>
             <li>AMS BYGGSERVICE AS</li>
             <li>NIP: 132643276</li>
-            <li>Adres: ul. Przykładowa 1, 98-400 Wieruszów</li>
+            <li>Adres: ul. Żydowska 1, 98-400 Wieruszów</li>
           </ul>
         </div>
 

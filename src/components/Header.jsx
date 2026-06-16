@@ -45,7 +45,7 @@ export default function Header() {
         </nav>
 
         <a className="nav-phone" href="tel:+48XXXXXXXXX">
-          📞 +48 XXX XXX XXX
+          📞 +47 925 36 941
         </a>
 
         <Link className="btn btn-primary" href="/kontakt">

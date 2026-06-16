@@ -4,36 +4,6 @@ import Link from 'next/link'
 // DANE — edytujesz tutaj, reszta się generuje
 // =============================================
 
-const heroStats = [
-  { label: 'Rachunki niższe o', value: '60%' },
-  { label: 'Budowa w', value: '90 dni' },
-  { label: 'Materiały', value: 'Certyfikowane drewno C24' },
-  { label: 'Gwarancja', value: 'Na pokolenia' },
-]
-
-const features = [
-  {
-    icon: '❄️',
-    title: 'Rachunki niższe o 60%',
-    text: 'Wysoka izolacja termiczna, domy pasywne i ciepły mikroklimat przez cały rok.',
-  },
-  {
-    icon: '🧱',
-    title: 'Budowa w 90 dni',
-    text: 'Prefabrykacja w fabryce pozwala na montaż konstrukcji w kilka dni, niezależnie od pogody.',
-  },
-  {
-    icon: '🌲',
-    title: 'Drewno C24 z certyfikatem',
-    text: 'Suszone komorowo skandynawskie drewno świerkowe, odporne na ogień i szkodniki.',
-  },
-  {
-    icon: '🛡️',
-    title: 'Trwałość na pokolenia',
-    text: 'Norweska technologia sprawdzona w skrajnych warunkach klimatycznych i długim użytkowaniu.',
-  },
-]
-
 const projects = [
   {
     name: 'Fjord 120',
@@ -273,7 +243,7 @@ function ContactCTA() {
           <form>
             <div className="field-grid">
                 <label>Imię<input type="text" placeholder="Twoje imię" /></label>
-                <label>Telefon<input type="tel" placeholder="+48 600 000 000" /></label>
+                <label>Telefon<input type="tel" placeholder="+47 600 000 000" /></label>
             </div>
             <label>E-mail<input type="email" placeholder="mail@przyklad.pl" /></label>
             <label>Lokalizacja<input type="text" placeholder="np. Kraków / woj. małopolskie" /></label>

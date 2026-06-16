@@ -3,10 +3,8 @@ import Image from 'next/image'
 
 const navItems = [
   { href: '/', label: 'Strona główna' },
-  { href: '/oferta', label: 'Oferta' },
-  { href: '/technologia', label: 'Technologia' },
-  { href: '/realizacje', label: 'Realizacje' },
-  { href: '/o-nas', label: 'O nas' },
+  { href: '/Projektowanie domu', label: 'Projektowanie domu' },
+  { href: '/Opinie klientów', label: 'Opinie klientów' },
   { href: '/kontakt', label: 'Kontakt' },
 ]
 

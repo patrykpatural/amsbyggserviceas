@@ -6,8 +6,8 @@ import { usePathname } from 'next/navigation'
 
 const navItems = [
   { href: '/', label: 'Strona główna' },
-  { href: '/oferta', label: 'Projektowanie domu' },
-  { href: '/realizacje', label: 'Opinie klientów' },
+  { href: '/Projektowanie-domu', label: 'Projektowanie domu' },
+  { href: '/Opinie-klientów', label: 'Opinie klientów' },
   { href: '/kontakt', label: 'Kontakt' },
 ]
 

@@ -3,10 +3,8 @@ import Image from 'next/image'
 
 const navItems = [
   { href: '/', label: 'Strona główna' },
-  { href: '/projektowanie-domu', label: 'Projektowanie domu' },
-  { href: '/opinie-klientow', label: 'Opinie klientów' },
-  { href: '/kontakt', label: 'Kontakt' },
-    { href: '/o-nas', label: 'O nas' },
+  { href: '/konfigurator-domu', label: 'Konfigurator domu' },
+  { href: '/o-nas', label: 'O nas' },
 ]
 
 export default function Footer() {

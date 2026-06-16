@@ -6,9 +6,7 @@ import { usePathname } from 'next/navigation'
 
 const navItems = [
   { href: '/', label: 'Strona główna' },
-  { href: '/projektowanie-domu', label: 'Projektowanie domu' },
-  { href: '/opinie-klientow', label: 'Opinie klientów' },
-  { href: '/kontakt', label: 'Kontakt' },
+  { href: '/konfigurator-domu', label: 'Konfigurator domu' },
   { href: '/o-nas', label: 'O nas' },
 ]
 
@@ -47,7 +45,7 @@ export default function Header() {
           📞 +47 925 36 941
         </a>
 
-        <Link className="btn btn-primary" href="/kontakt">
+        <Link className="btn btn-primary" href="/o-nas#contact">
           Indywidualna wycena
         </Link>
       </div>

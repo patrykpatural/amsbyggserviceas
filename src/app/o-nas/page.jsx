@@ -29,7 +29,7 @@ function ContactCTA() {
   )
 }
 
-export default function Kontakt() {
+export default function ONas() {
   return (
     <main id="top" className="container">
       <ContactCTA />

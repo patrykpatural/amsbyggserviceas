@@ -1,9 +1,9 @@
 import Link from 'next/link'
 
-export default function Kontakt() {
+export default function OpinieKlientow() {
   return (
     <main id="top" className="container">
-      Projektowanie domu
+      Opinie klientow
     </main>
   )
 }

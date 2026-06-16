@@ -4,6 +4,29 @@ import Link from 'next/link'
 // DANE — edytujesz tutaj, reszta się generuje
 // =============================================
 
+const features = [
+  {
+    icon: '❄️',
+    title: 'Rachunki niższe o 60%',
+    text: 'Wysoka izolacja termiczna, domy pasywne i ciepły mikroklimat przez cały rok.',
+  },
+  {
+    icon: '🧱',
+    title: 'Budowa w 90 dni',
+    text: 'Prefabrykacja w fabryce pozwala na montaż konstrukcji w kilka dni, niezależnie od pogody.',
+  },
+  {
+    icon: '🌲',
+    title: 'Drewno C24 z certyfikatem',
+    text: 'Suszone komorowo skandynawskie drewno świerkowe, odporne na ogień i szkodniki.',
+  },
+  {
+    icon: '🛡️',
+    title: 'Trwałość na pokolenia',
+    text: 'Norweska technologia sprawdzona w skrajnych warunkach klimatycznych i długim użytkowaniu.',
+  },
+]
+
 const projects = [
   {
     name: 'Fjord 120',
@@ -103,15 +126,6 @@ function HeroSection() {
             </Link>
           </div>
         </div>
-
-        <aside className="hero-card">
-          {heroStats.map((stat) => (
-            <div className="mini-stat" key={stat.label}>
-              <span>{stat.label}</span>
-              <strong>{stat.value}</strong>
-            </div>
-          ))}
-        </aside>
       </div>
     </section>
   )

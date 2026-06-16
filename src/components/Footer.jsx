@@ -3,8 +3,8 @@ import Image from 'next/image'
 
 const navItems = [
   { href: '/', label: 'Strona główna' },
-  { href: '/Projektowanie domu', label: 'Projektowanie domu' },
-  { href: '/Opinie klientów', label: 'Opinie klientów' },
+  { href: '/projektowanie-domu', label: 'Projektowanie domu' },
+  { href: '/opinie-klientow', label: 'Opinie klientów' },
   { href: '/kontakt', label: 'Kontakt' },
 ]
 
@@ -89,7 +89,7 @@ export default function Footer() {
                 📧 kontakt@amsbyggservice.pl
               </a>
             </li>
-            <li>Pn–Pt: 8:00–16:00</li>
+            <li>Pn-Pt: 8:00-16:00</li>
           </ul>
         </div>
       </div>

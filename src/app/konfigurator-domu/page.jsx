@@ -1,9 +1,9 @@
 import Link from 'next/link'
 
-export default function Kontakt() {
+export default function KonfiguratorDomu() {
   return (
     <main id="top" className="container">
-      Projektowanie domu
+      konfigurator domu
     </main>
   )
 }

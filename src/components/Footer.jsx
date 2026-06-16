@@ -75,7 +75,7 @@ export default function Footer() {
           <h3>Dane firmy</h3>
           <ul>
             <li>AMS BYGGSERVICE AS</li>
-            <li>Org. nr: 132 643 276</li>
+            <li>NIP: 132643276</li>
             <li>Adres: ul. Przykładowa 1, 98-400 Wieruszów</li>
           </ul>
         </div>

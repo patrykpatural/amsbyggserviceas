@@ -76,14 +76,26 @@ a { text-decoration: none; color: inherit; }
 
 .hero {
   padding: 2.4rem 5rem 4.6rem;
-  background:
-    linear-gradient(120deg, rgba(10,16,23,0.78) 0%, rgba(20,30,39,0.38) 45%, rgba(10,16,23,0.18) 100%),
-    url('/img/dom1.jpg') center/cover no-repeat;
   color: #fff;
   border-radius: 30px;
   min-height: 90vh; display: flex; align-items: center;
   box-shadow: var(--shadow);
   margin-top: 1rem;
+  overflow: hidden;
+  background:
+    linear-gradient(120deg, rgba(10,16,23,0.78) 0%, rgba(20,30,39,0.38) 45%, rgba(10,16,23,0.18) 100%),
+    url('/img/dom1.jpg') center/cover no-repeat;
+  animation: hero-zoom 20s ease-out forwards;
+}
+
+
+@keyframes hero-zoom {
+  from {
+    background-size: 100%;
+  }
+  to {
+    background-size: 120%;
+  }
 }
 
 .hero-grid {

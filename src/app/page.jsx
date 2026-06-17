@@ -253,7 +253,6 @@ export default function HomePage() {
       <ProjectsSection />
       <ProcessSection />
       <SocialProofSection />
-      <ContactCTA />
     </main>
   )
 }

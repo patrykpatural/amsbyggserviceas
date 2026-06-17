@@ -45,7 +45,7 @@ export default function Header() {
           📞 +47 925 36 941
         </a>
 
-        <Link className="btn btn-primary" href="/o-nas#contact">
+        <Link className="btn btn-primary" href="/kontakt">
           Indywidualna wycena
         </Link>
       </div>

@@ -109,22 +109,20 @@ function SectionHeader({ eyebrow, title }) {
 function HeroSection() {
   return (
     <section className="hero">
-      <div className="container hero-grid">
-        <div>
-          <p className="eyebrow">Skandynawski standard budownictwa</p>
-          <h1>Nowoczesne domy norweskie.</h1>
-          <p className="lead">
-            Budujemy całoroczne domy energooszczędne w skandynawskim standardzie.
-            Przenieś się na swoje w jeden sezon.
-          </p>
-          <div className="hero-actions">
-            <Link className="btn btn-primary" href="/projekty">
-              Zobacz gotowe projekty
-            </Link>
-            <Link className="btn btn-secondary" href="/technologia">
-              Poznaj technologię
-            </Link>
-          </div>
+      <div className="container hero-text">
+        <p className="eyebrow fade-up">Skandynawski standard budownictwa</p>
+        <h1 className="fade-up">Nowoczesne domy norweskie.</h1>
+        <p className="lead fade-up">
+          Budujemy całoroczne domy energooszczędne w skandynawskim standardzie.
+          Przenieś się na swoje w jeden sezon.
+        </p>
+        <div className="hero-actions">
+          <Link className="btn btn-primary fade-up" href="/projekty">
+            Zobacz gotowe projekty
+          </Link>
+          <Link className="btn btn-secondary fade-up" href="/technologia">
+            Poznaj technologię
+          </Link>
         </div>
       </div>
     </section>
@@ -247,12 +245,16 @@ function SocialProofSection() {
 
 export default function HomePage() {
   return (
-    <main id="top" className="container">
-      <HeroSection />
-      <FeaturesSection />
-      <ProjectsSection />
-      <ProcessSection />
-      <SocialProofSection />
+    <main>
+      <div className="top">
+        <HeroSection />
+      </div>
+      <div className="container">
+        <FeaturesSection />
+        <ProjectsSection />
+        <ProcessSection />
+        <SocialProofSection />
+      </div>
     </main>
   )
 }

@@ -11,10 +11,11 @@
   --warm: #c8a97b;
   --border: rgba(23, 33, 43, 0.12);
   --shadow: 0 18px 40px rgba(15, 23, 42, 0.12);
+  --dark-bg: #111827;
 }
 
 * { box-sizing: border-box; }
-html { scroll-behavior: smooth; }
+html { scroll-behavior: smooth; scrollbar-gutter: stable;}
 body {
   margin: 0;
   font-family: var(--font-inter), sans-serif;
@@ -65,7 +66,7 @@ a { text-decoration: none; color: inherit; }
   display: inline-flex; align-items: center; justify-content: center;
   border-radius: 999px; padding: 0.9rem 1.15rem; font-weight: 700;
   transition: transform 0.18s ease, box-shadow 0.18s ease;
-  border: 1px solid transparent;
+  border: 1px solid transparent; cursor: pointer;
 }
 .btn:hover { transform: translateY(-1px); }
 .btn-primary { background: var(--accent); color: #fff; box-shadow: var(--shadow); }
@@ -245,7 +246,7 @@ strong {
 }
 
 .footer {
-  background: #111827;
+  background: var(--dark-bg);
   color: #f9fafb;
   padding: 56px 0 24px;
   margin-top: 80px;
@@ -324,4 +325,134 @@ strong {
   .footer-grid {
     grid-template-columns: 1fr;
   }
+}
+
+.contact-modal-button {
+  position: fixed;
+  bottom: 1rem; 
+  right: 1rem;
+  width: 3.5rem; 
+  height: 3.5rem;
+  border: none;
+  border-radius: 50%;
+  padding: 1rem;
+  box-shadow: 0px 0px 50px 10px #878787;
+  background-color: var(--bg);
+  cursor: pointer;
+  outline: none;
+  display: flex; 
+  justify-content: center; 
+  align-items: center;
+  overflow: hidden; 
+  z-index: 1000;
+}
+
+.contact-modal-button::before {
+  content: '';
+  position: absolute;
+  top: -100%; 
+  left: 0;
+  width: 100%;
+  height: 500%; 
+  background: linear-gradient(to bottom, 
+    #1a1a1a 0%, #1a1a1a 20%, 
+    var(--bg) 20%, var(--bg) 40%, 
+    #1a1a1a 40%, #1a1a1a 60%, 
+    var(--bg) 60%, var(--bg) 80%, 
+    #1a1a1a 80%, #1a1a1a 100%
+  );
+  z-index: 1;
+  transform: translateY(0);
+}
+
+.contact-modal-button svg {
+  color: #1a1a1a;
+  position: relative;
+  z-index: 2;
+}
+
+.contact-modal-button.animate-in::before {
+  animation: enterUp 0.8s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+.contact-modal-button.animate-in svg {
+  animation: iconEnter 0.8s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+@keyframes enterUp {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-20%); } 
+  100% { transform: translateY(-40%); }
+}
+
+@keyframes iconEnter {
+  0% { color: #1a1a1a; scale: 1}
+  50% { color: var(--bg); }
+  100% { color: #1a1a1a; scale: 1.4;}
+}
+
+.contact-modal-button.animate-out::before {
+  animation: exitDown 0.8s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+.contact-modal-button.animate-out svg {
+  animation: iconExit 0.8s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+@keyframes exitDown {
+  0% { transform: translateY(-40%); } 
+  50% { transform: translateY(-20%); } 
+  100% { transform: translateY(0); } 
+}
+
+@keyframes iconExit {
+  0% { color: #1a1a1a; scale: 1.4;}
+  50% { color: var(--bg); }
+  100% { color: #1a1a1a; scale: 1; }
+}
+
+.visible{
+  visibility: visible;
+}
+
+
+.hidden{
+  visibility: hidden;
+}
+
+.contact-modal{
+  background-color: var(--dark-bg);
+  color: var(--surface-2);
+  min-height: 50vh;
+  width: 40vw;
+  padding: 2rem;
+  border-radius: 2rem;
+}
+
+.modal-fullscreen{
+  z-index: 9999;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  left: 0;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-modal h3{
+  float: left;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.contact-modal form{
+  clear: both;
+}
+
+.contact-modal-close{
+  padding: 0;
+  color: white;
+  width: 1rem;
+  float: right;
 }

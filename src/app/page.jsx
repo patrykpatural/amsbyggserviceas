@@ -106,10 +106,10 @@ const constructionPhotos = [
 ]
 
 const buildHighlights = [
-  '4 dni montażu',
-  '100% kontrola jakości',
-  'Certyfikowane drewno',
-  'Nowoczesna termoizolacja',
+  'Montaż w technologii off-site',
+  'Regulacje TEK-17',
+  'Certyfikowane drewno C24',
+  'Izolacja PIR / PUR',
 ]
 
 // =============================================
@@ -239,7 +239,7 @@ function SocialProofSection() {
             <span className="pill">📸 Relacje z budowy</span>
             <h3 className="insta-title">Na żywo z placu budowy</h3>
             <p className="insta-text">
-              Wstawiamy codzienne aktualizacje, zdjęcia detali i proces montażu,
+              Wstawiamy tygodniowe aktualizacje, zdjęcia detali i proces montażu,
               by klient czuł się pewnie od pierwszego spotkania.
             </p>
           </div>

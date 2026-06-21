@@ -106,10 +106,10 @@ const constructionPhotos = [
 ]
 
 const buildHighlights = [
-  'Montaż w technologii off-site',
+  '',
   'Regulacje TEK-17',
   'Certyfikowane drewno C24',
-  'Izolacja PIR / PUR',
+  '',
 ]
 
 // =============================================

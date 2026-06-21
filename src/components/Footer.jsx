@@ -4,6 +4,8 @@ import Image from 'next/image'
 const navItems = [
   { href: '/', label: 'Strona główna' },
   { href: '/konfigurator-domu', label: 'Konfigurator domu' },
+  { href: '/technologia', label: 'Technologia' },
+  { href: '/realizacje', label: 'Realizacje' },
   { href: '/o-nas', label: 'O nas' },
 ]
 

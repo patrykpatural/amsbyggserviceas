@@ -1,3 +1,4 @@
+import { text } from '@fortawesome/fontawesome-svg-core'
 import Link from 'next/link'
 
 // =============================================
@@ -77,10 +78,30 @@ const steps = [
   },
 ]
 
-const testimonials = [
+const constructionPhotos = [
   {
-    quote: 'W domu jest niesamowicie ciepło, a ekipa postawiła ściany w 4 dni. Polecam!',
-    author: 'Janusz i Maria spod Warszawy',
+    image: "/img/budowa1.jpg",
+    text: "zdjecie z budowy"
+  },
+  {
+    image: "/img/budowa2.jpg",
+    text: "zdjecie z budowy"
+  },
+  {
+    image: "/img/budowa3.jpg",
+    text: "zdjecie z budowy"
+  },
+  {
+    image: "/img/budowa4.jpg",
+    text: "zdjecie z budowy"
+  },
+  {
+    image: "/img/budowa5.jpg",
+    text: "zdjecie z budowy"
+  },
+  {
+    image: "/img/budowa6.jpg",
+    text: "zdjecie z budowy"
   },
 ]
 
@@ -206,16 +227,13 @@ function SocialProofSection() {
         title="Realizacje i zaufanie klientów"
       />
       <div className="proof-grid">
-
-        {/* Opinie */}
-        {testimonials.map((testimonial) => (
-          <div className="quote-card" key={testimonial.author}>
-            <blockquote>"{testimonial.quote}"</blockquote>
-            <cite>{testimonial.author}</cite>
+        <div className='photos-container'>
+          <div className="construction-photos">
+            {constructionPhotos.map((photo) => (
+              <img src={photo.image} alt={photo.text} key={photo.image} className='construction-image'></img> 
+            ))}
           </div>
-        ))}
-
-        {/* Relacje z budowy */}
+        </div>
         <div className="insta-card">
           <div>
             <span className="pill">📸 Relacje z budowy</span>

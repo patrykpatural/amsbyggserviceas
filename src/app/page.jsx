@@ -85,10 +85,10 @@ const testimonials = [
 ]
 
 const buildHighlights = [
-  '4 dni montażu',
-  '100% kontrola jakości',
-  'Certyfikowane drewno',
-  'Nowoczesna termoizolacja',
+  'Montaż w technologii off-site',
+  'Wieloetapowa kontrola montażu',
+  'Certyfikowane drewno C24',
+  'Izolacja PIR / PUR',
 ]
 
 // =============================================

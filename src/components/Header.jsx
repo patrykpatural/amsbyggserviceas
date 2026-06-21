@@ -15,7 +15,7 @@ export default function Header() {
 
   return (
     <header className="topbar">
-      <div className="container nav">
+      <div className="nav">
         <Link className="brand" href="/">
           <Image
             className="brand-logo"

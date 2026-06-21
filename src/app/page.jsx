@@ -138,7 +138,7 @@ function HeroSection() {
           Przenieś się na swoje w jeden sezon.
         </p>
         <div className="hero-actions">
-          <Link className="btn btn-primary fade-up" href="/projekty">
+          <Link className="btn btn-primary fade-up" href="/realizacje">
             Zobacz gotowe projekty
           </Link>
           <Link className="btn btn-secondary fade-up" href="/technologia">

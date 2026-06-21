@@ -1,9 +1,9 @@
 import Link from 'next/link'
 
-export default function ONas() {
+export default function Realizacje() {
   return (
     <main id="top" className="container">
-      <p>onas</p>
+      <p>realizacje</p>
     </main>
   )
 }
